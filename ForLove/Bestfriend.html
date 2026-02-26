@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <title>Monthsarry with Kupal</title>
+  <link rel="icon" type="image/x-icon" href="https://media1.tenor.com/images/82b39c323ca376e9bb5844a54973fc42/tenor.gif?itemid=16596386">
+  <style>
+    body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+.heart {
+  color: #ff69b4; /* Change heart color */
+}
+
+.popup {
+  background-color: rgba(255, 255, 255, 0.95); /* Improve visibility */
+}
+
+button:hover {
+  background-color: #ff69b4; /* Match heart color */
+}
+    h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+      color: #ff5f6d;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .content {
+      line-height: 1.8;
+      color: #333;
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    .signature {
+      font-weight: bold;
+      color: #ff5f6d;
+    }
+
+    .emoji {
+      font-size: 24px;
+      margin-right: 5px;
+    }
+
+    .footer {
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 15px 30px;
+      background-color: #ff5f6d;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: background-color 0.3s ease;
+      outline: none;
+    }
+
+    button:hover {
+      background-color: #ff3d50;
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      z-index: 999;
+    }
+
+    .popup img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 24px;
+      color: #ff5f6d;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #ff3d50;
+    }
+
+    /* Animation */
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-20px);
+      }
+      60% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .heart {
+      animation: bounce 1s infinite;
+    }
+
+    .profile-pic {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .round {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+    }
+
+  </style>
+  
+</head>
+<body>
+  <audio id="music1" src="music/music.mp3" loop autoplay></audio>
+
+  <audio id="music2" src="music/still_with_you.mp3" loop></audio>
+
+      <div class="container">
+    <h1>Happy 5th Monthsarry!</h1>
+    <div class="content">
+      <p>Damn, grabe sobrang bilis ng oras eh gagi those 5 months na naging gf kita sobrang saya ko AHAHHAHA paldong paldo eh may gf akong pogi na masarap HAHAHAHA</p>
+      <p><span class="emoji">🎮</span><span class="signature">Gaming Bud</span><br>
+      Shesh, gagi namiss ko nanaman yung pag lalaro natin sa bloxfruit non eh tas yung gag, kasama sila haru watah nays mimuri AHHAHAHAHA</p>
+      <p><span class="emoji">🖕</span><span class="signature">Pakyu AHAHHAHA</span><br>
+      So, ayon kahit d tayo nag kakausap ng maayos dahil sa sobrang busy natin pareho sa acads tas hindi naman pwedeng sa isat isa lang natin ibuhos yung time natin. Pero masaya ako na kahit papano napasaya kita kahit d nag kakaintindihan AHHAHA</p>
+      <p><span class="emoji">😆</span><span class="signature">Namo HAHHHA</span><br>
+      Thank you, for giving me a permission to be your lover even its temporary pero apaka worth it legit 100% AHAHAH paldooooo</p>
+      <p><span class="emoji">😚</span><span class="signature">Ingat ka jan</span><br>
+      Tho, this is the end na eh d parin naman mag babago tingin ko sayo AHAHAH, gaya ng pinag usapan tropa parin namoka wag mo lang akong kalimutan eme AHHAHAHAH</p>
+      <p><span class="emoji">😋</span><span class="signature">Ang kyot mo maiinis legit</span><br>
+      Yun ang pinaka gusto ko sayo eh yung iniinis kita tapos nagagalit ka tas pag mag papasuyo ka d kita susuyuin AHHAHAHAA angas non eh dun ako natatawa tas sobrang saya ko non</p>
+      <p><span class="emoji">😒</span><span class="signature">Namoka wag mo palitan password mo sa Genshin</span><br>
+      Anong acc na yung i grind ko kapag pinalitan mo ng password dba namoka kyot kyot pani columbina don eh angas gagi legit d nako nag aarle ata AHAHAHAH</p>
+      <p><span class="emoji">🙇‍♂️</span><span class="signature">Thankyou</span><br>
+      Even though, i didnt treat you like i say last month, eh thank you parin kasi tinanggap mo parin ako HAHAHA wala na tanginamoka mwah Iloveyouuuuuu mmmmmmmmmmmmmwwwwwwwwwwwaaaaaaaaaaaaaaaaaaaahhhhhhhhhhhhhhhhhhh!!!</p>
+    </div>
+    <div class="footer">
+      <button onclick="showPopup()">Click for Bold AHAHAHAH</button>
+    </div>
+    <div class="popup" id="popup">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <img src="https://media1.tenor.com/images/82b39c323ca376e9bb5844a54973fc42/tenor.gif?itemid=16596386" alt="Surprise for Bestie baka">
+    </div>
+  </div>
+  <div class="profile-pic" onclick="openNewTab()">
+    <img src="https://s-hadowheart.carrd.co/assets/images/image01.jpg?v=91985b0d" alt="Profile Picture" class="round">
+  </div> 
+  
+</body>
+  <script>
+
+
+    var smallHearts = [];
+    var firstHeart = null;
+    // var backgroundMusic1 = document.getElementById("music1");
+    // backgroundMusic1.play();
+    function openNewTab() {
+  window.open('https://s-hadowheart.carrd.co', '_blank');
+}
+
+
+    function showPopup() {
+      var popup = document.getElementById("popup");
+      popup.style.display = "block";
+      animateHearts();
+    }
+  
+    function closePopup() {
+      animateClosing();
+      setTimeout(function() {
+        var popup = document.getElementById("popup");
+        popup.style.display = "none";
+      }, 10); 
+    }
+  
+    function animateHearts() {
+      var heart = document.createElement("span");
+      heart.innerHTML = "&#10084;";
+      heart.className = "heart";
+      heart.style.position = "fixed";
+      heart.style.color = "#ff5f6d";
+      heart.style.fontSize = "24px";
+      heart.style.zIndex = "1000";
+      heart.style.left = "50%";
+      heart.style.top = "50%";
+      heart.style.transformOrigin = "center";
+      document.body.appendChild(heart);
+  
+      setTimeout(function() {
+        heart.style.transform = "scale(50)"; 
+      }, 10);
+  
+      setTimeout(function() {
+        heart.remove();
+      }, 2500);
+    }
+  
+    function animateClosing() {
+      firstHeart = document.querySelector('.small-heart');
+      if (firstHeart) {
+        firstHeart.animate([
+          { opacity: 1, transform: 'scale(1)' },
+          { opacity: 0, transform: 'scale(5)' }
+        ], {
+          duration: 500,
+          easing: 'ease-out',
+          fill: 'forwards'
+        }).onfinish = function() {
+          firstHeart.remove();
+        };
+      }
+  
+      var centralHeart = document.createElement("span");
+      centralHeart.innerHTML = "&#10084;";
+      centralHeart.className = "heart";
+      centralHeart.style.position = "fixed";
+      centralHeart.style.color = "#ff5f6d";
+      centralHeart.style.fontSize = "24px";
+      centralHeart.style.zIndex = "1000";
+      centralHeart.style.left = "50%";
+      centralHeart.style.top = "50%";
+      centralHeart.style.transformOrigin = "center";
+      document.body.appendChild(centralHeart);
+  
+      var finalScale = Math.max(400, 180);
+      var animation = centralHeart.animate([
+        { transform: 'scale(1)', left: '50%', top: '50%' },
+        { transform: 'scale(' + finalScale + ')', left: '0', top: '0' }
+      ], {
+        duration: 2000,
+        easing: "ease-out" 
+      });
+  
+      animation.onfinish = function() {
+        centralHeart.remove();
+        createRain();
+        setInterval(createRain, 3000); 
+      };
+    }
+  
+    function createRain() {
+
+        var backgroundMusic1 = document.getElementById("music1");
+        backgroundMusic1.pause();
+      var backgroundMusic = document.getElementById("music2");
+        backgroundMusic.play();
+        
+  
+      // Clear old small hearts
+      smallHearts.forEach(function(heart) {
+        heart.remove();
+      });
+      smallHearts = [];
+  
+      for (var i = 0; i < 200; i++) { 
+        var heart = document.createElement("span");
+        heart.innerHTML = "&#10084;";
+        heart.className = "small-heart";
+        heart.style.position = "fixed";
+        heart.style.color = "#ff5f6d";
+        heart.style.fontSize = "16px";
+        heart.style.zIndex = "1000";
+        heart.style.left = Math.random() * window.innerWidth + "px";
+        heart.style.top = Math.random() * -500 + "px"; 
+        document.body.appendChild(heart);
+        smallHearts.push(heart);
+  
+        var animation = heart.animate(
+          [
+            { top: heart.style.top, opacity: 1 },
+            { top: window.innerHeight + "px", opacity: 0 }
+          ],
+          {
+            duration: Math.random() * 3000 + 2000, 
+            easing: "linear",
+            delay: Math.random() * 1000, 
+            fill: "forwards" 
+          }
+        );
+  
+        animation.onfinish = function() {
+          heart.remove();
+          smallHearts.splice(smallHearts.indexOf(heart), 1);
+        };
+      }
+    }
+</script>
+</html>
